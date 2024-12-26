@@ -3,12 +3,12 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBw__EN9-uXvHbhha5dw03eD6vOzTAIWOQ",
-  authDomain: "tibetan-id-system-b2e71.firebaseapp.com",
-  projectId: "tibetan-id-system-b2e71",
-  storageBucket: "tibetan-id-system-b2e71.firebasestorage.app",
-  messagingSenderId: "450873808642",
-  appId: "1:450873808642:web:95f11b091465951dcad41b",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
